@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block bodyblock %}
+
+<div class="container">
+    <h3 class="content">
+    <span style="color:#198b90">Identify Gender</span></h3>
+    <p class ="content">
+        Gender Classification: This app is works with previous trained data and a machine learning model.
+        As soon as you  upload a image, some Machine learning process goeson and our model returns whether 
+        the person in the uploaded image is a Male or Female and this happens in seconds.
+    </p>
+    <br>
+    <img src="{{url_for('static',filename='images/002.PNG')}}"width="800" height="400">
+    <br>
+    <div align="center">
+        <a href="{{url_for('gender')}}" class="btn btn-outline-primary">Try it </a>
+    </div>
+    
+</div>
+
+{% endblock  %}
